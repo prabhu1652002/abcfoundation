@@ -1,0 +1,14 @@
+
+header img{
+    height: 5em;
+    width:5em;
+    align-items: center;
+    margin-top: 1em;;
+}
+
+header{
+    
+    position: relative;
+    min-width: 350px;
+    background-color: #13265a;
+}

@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+    position: relative;
+  min-height: 100vh;    
+}
+header{
+    
+    position: relative;
+    min-width: 350px;
+    background-color: #13265a;
+    width: 100%;
+    min-width:300px;
+    
+}
+
+header img{
+    height: 5em;
+    width:5em;
+    align-items: center;
+    margin-top: 1em;;
+}
+
+
+
+/* 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #C2CAD0;
+    
+    
+    
+    
+   
+  }
+  .grid-item {
+    background-color:#05386B;
+    border: 5px solid #116ac4;
+    
+    padding: 10px;
+    color:#EDF5E1;
+    font-size: 30px;
+    text-align: center;
+    
+  } */
+
+  .grid-container{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:flex-start;
+      flex-direction: row;
+      background-color: #FFF;
+  }
+
+  .grid-item{
+      width:45%;
+        margin: 20px;
+        padding:10px;
+        max-width:400px ;
+        min-height: 300px;
+        font-size: large;
+      background-color: #1F2833;
+      color: #C5C6C7;
+      border:10px ridge #45A29E;
+      font-family: "Quicksand";
+  }
+  .grid-item img{
+      max-height: 100%;
+      max-width:100%;
+      
+     
+  }
+  .flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:30px;
+  }
+  footer{
+   height: 160px;
+    
+    background-color: #13265a;
+   
+}
+
+footer div.footer{
+    display: flex;
+    justify-content:space-between ;
+
+}
+
+footer div.footer .f_list{
+    display: flex;
+
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding:0% auto 0% auto;
+    
+
+}
+footer #rr li:hover{
+    border-bottom: springgreen solid;
+    background-color:#3b4f86;
+
+}
+
+
+footer .f_list li{
+    margin: 0% 2%;
+}
+
+footer .f_list a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+footer center{
+    color:#fff;
+}
+
+/* @media screen and (max-width: 600px) {
+    .grid-item {
+        background-color:#05386B;
+        border: 5px solid #116ac4;
+        
+        padding: 10px;
+        color:yellow;
+        font-size: 30px;
+        text-align: center;
+        
+      }
+  } */

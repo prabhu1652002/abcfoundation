@@ -1,0 +1,211 @@
+body,ul,li,h1,h2,a{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    
+}
+
+
+
+header{
+    width:100%;
+    position:fixed;
+    z-index:5;
+    text-align:center;
+    background: #13265a;
+    
+    top:0px;
+    
+}
+header img{
+    position: relative;
+    right:26em;
+    height:5em;
+    width:5em;
+}
+header button{
+    padding:0.8em;
+    border-radius: 8px;
+}
+
+
+header button:hover{
+    color:white;
+    background-color:black;
+    border:gold solid;
+    
+}
+
+.banner{
+    position: relative;
+}
+.banner img{
+    
+    width:100%;
+}
+
+div.welcome h2{
+    display: inline-block;
+    padding:0.7em;
+    position: absolute;
+    top:70%;
+
+    right:5%;
+    z-index:2;
+    background-color: darkblue;
+    color: white;
+    border:gold 10px;
+    border-style:ridge;
+    border-radius:20px
+}
+nav{
+    position:sticky;
+    top:100px;
+}
+
+nav.main-nav{
+    background-color:#13265a;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+nav li{
+    display: inline-block;
+    width:22%;
+    font-size: 40px;
+    
+}
+
+
+
+nav li a{
+   margin:0em 1em 0em 1em; 
+   text-decoration: none;
+   color:white;
+   font-size:20px
+  
+    
+}
+
+nav li a.join{
+    color:#9effc5;
+}
+
+nav ul{
+    white-space: nowrap;
+    max-width:100%;
+}
+
+main article h2{
+    color:royalblue;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    font-size: 48px;
+    background-color: #F4F4F4;
+}
+
+main article {
+    background-color: #F4F4F4;
+}
+
+main article p{
+    padding:0 40px;
+}
+
+main{box-sizing: border-box;}
+
+main ul{
+    text-align:center;
+    margin:80px 0;
+    white-space: nowrap;
+}
+main ul li{
+    
+    display: inline-block;
+    width:40%;
+    margin:20px 5%;
+}
+main ul li img{
+    
+    max-width:100%;
+}
+
+section.join h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    position:relative;
+    display:inline;
+    left:10%;
+    font-style: oblique;
+    color:#F4F4F4;
+}
+section div#join{
+    background-color: #DA2528;
+    border:10px dashed #F4F4F4;
+    
+}
+section.join p{
+    background-color: #F4F4F4;
+    box-sizing: border-box;
+    padding:0 40px;
+}
+
+form input{
+    margin:20px 0;
+    padding:10px 20px;
+    font-size:24px;
+    border-radius:28px;
+    border:4px solid white;
+    border:solid;
+    display: inline;
+    position:relative;
+    left:10%;
+    background-color:lightcyan;
+    
+}
+
+
+
+footer
+{background-color:#13265a;
+color:white;
+padding:10px;
+text-align:center;}
+
+nav li:hover{
+    border-bottom: gold 6px solid;
+    background-color:#516499;
+    display: inline-block;
+
+    
+}
+.images li:hover{
+    
+    position:relative;
+    top:4px;
+}
+
+form input:focus{
+    border:4px dashed #4b4b4b;
+    border-radius:28px;
+}
+
+form input:valid{
+    border:4px dashed #4b4b4b;
+    
+    background-color: greenyellow;
+}
+
+article p::first-letter{
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+footer img{
+    
+    height: 2em;
+    width: 2em;
+}

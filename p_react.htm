@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="p_react.css">
+</head>
+
+<body>
+
+    <header id="h_1" class="banner">
+
+        <center>
+            <img src="/MicrosoftTeams-image.png" alt="">
+        </center>
+        <br>
+    </header>
+
+<div class="flex-wrapper">
+    <div id="container1"></div>
+
+    <footer>
+        <div class="footer">
+            <ul class="f_list 1" id="rr">
+
+                <li><a href="#">About us</a></li>
+                <li> <a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+
+
+            <ul class="f_list 2" id="social">
+                <li><a href="https://www.instagram.com/prabhu_16502/?hl=en" target="_blank"><img
+                            src="/Instagram_logo_2016.svg.png" style="height: 2em; width:2em;" alt="insta"></a></li>
+                <li><a href="https://www.facebook.com/bangtan.official" target="_blank"><img src="/Facebook-logo.png"
+                            style="height: 2em; width:2em;" alt="face"></a></li>
+                <li><a href="https://twitter.com/search?q=%23jungkook&lang=en" target="_blank"><img
+                            src="/Twitter-Logo.png" style="height: 2em; width:3em;" alt="twit"></a></li>
+            </ul>
+        </div>
+        <br>
+        <hr width="70%">
+        <center>copyrights</center>
+        <br><br>
+    </footer>
+    </div>
+
+    <script type="text/babel">
+
+
+
+        const Card = function (props) {
+
+
+
+            return (
+
+                <div className="grid-item">
+                    <h1>{props.heading}</h1>
+                    <img src={props.img_source} alt="image" />
+                    <p>{props.text}</p>
+                    <button style={{ color: "#66FCF1", backgroundColor: "#0B0C10", fontWeight: "bold", border: "3px #45A29E solid", borderRadius: "20px" }}>VOLUNTEER</button>
+
+                </div>
+
+            )
+
+        }
+
+        class CardRender extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+
+            render() {
+                const random_text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas laborum temporibus exercitationem nobis ipsa minus asperiores excepturi? Necessitatibus earum fugiat distinctio nihil, molestiae eum facilis asperiores, ipsum, quo deleniti velit"
+
+                return (
+
+                    <div className="grid-container" id="container1_body">
+
+                        <Card heading="NGO 1" img_source="/1.jpg" text={random_text} />
+                        <Card heading="NGO 2" img_source="/2.jpg" text={random_text} />
+                        <Card heading="NGO 3" img_source="3.jpg" text={random_text} />
+                        <Card heading="NGO 4" img_source="/4.jpg" text={random_text} />
+                        <Card heading="NGO 5" img_source="/5.jpg" text={random_text} />
+                    </div>
+                );
+            }
+        };
+
+        
+
+        ReactDOM.render(<CardRender />, document.getElementById('container1'))
+
+
+        
+    </script>
+
+</body>
+
+</html>
